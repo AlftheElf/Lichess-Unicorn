@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Lichess Unicorn Knights",
+  "version": "0.1.0",
+  "description": "Replaces knight pieces on lichess.org with unicorn pieces.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lichess-unicorn-knights@example.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/*", "https://*.lichess.org/*"],
+      "css": ["content/knight-unicorn.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.svg"],
+      "matches": ["https://lichess.org/*", "https://*.lichess.org/*"]
+    }
+  ]
+}

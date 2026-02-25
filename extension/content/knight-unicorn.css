@@ -1,0 +1,36 @@
+/* Lichess Unicorn Knights
+   Replaces knight pieces on lichess.org.
+
+   Notes:
+   - Lichess uses Chessground which renders pieces as <piece class="white knight"> etc.
+   - We override the background-image so the existing sprite/positioning is ignored.
+*/
+
+:root {
+  --lu-white-knight: url("../assets/Chess_Ult45.svg");
+  --lu-black-knight: url("../assets/Chess_Udt45.svg");
+}
+
+/* Main board + analysis + mini boards */
+piece.white.knight,
+piece.black.knight,
+.cg-board piece.white.knight,
+.cg-board piece.black.knight,
+.cg-wrap piece.white.knight,
+.cg-wrap piece.black.knight {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+}
+
+piece.white.knight,
+.cg-board piece.white.knight,
+.cg-wrap piece.white.knight {
+  background-image: var(--lu-white-knight) !important;
+}
+
+piece.black.knight,
+.cg-board piece.black.knight,
+.cg-wrap piece.black.knight {
+  background-image: var(--lu-black-knight) !important;
+}

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lichess Unicorn Knights",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Replaces knight pieces on lichess.org with unicorn/zebra/dragon pieces.",
   "action": {
     "default_title": "Knight variant",

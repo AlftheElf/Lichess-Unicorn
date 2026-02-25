@@ -10,7 +10,10 @@
   "permissions": ["storage"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "lichess-unicorn-knights@example.com"
+      "id": "lichess-unicorn-knights@alftheelf.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "content_scripts": [

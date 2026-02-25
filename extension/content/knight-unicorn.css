@@ -6,31 +6,26 @@
    - We override the background-image so the existing sprite/positioning is ignored.
 */
 
-:root {
-  --lu-white-knight: url("../assets/Chess_Ult45.svg");
-  --lu-black-knight: url("../assets/Chess_Udt45.svg");
-}
-
-/* Main board + analysis + mini boards */
-piece.white.knight,
-piece.black.knight,
-.cg-board piece.white.knight,
-.cg-board piece.black.knight,
-.cg-wrap piece.white.knight,
-.cg-wrap piece.black.knight {
+/* Main board + analysis + mini boards — only active when a variant is selected */
+html[data-lu-variant] piece.white.knight,
+html[data-lu-variant] piece.black.knight,
+html[data-lu-variant] .cg-board piece.white.knight,
+html[data-lu-variant] .cg-board piece.black.knight,
+html[data-lu-variant] .cg-wrap piece.white.knight,
+html[data-lu-variant] .cg-wrap piece.black.knight {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: 100% 100% !important;
 }
 
-piece.white.knight,
-.cg-board piece.white.knight,
-.cg-wrap piece.white.knight {
+html[data-lu-variant] piece.white.knight,
+html[data-lu-variant] .cg-board piece.white.knight,
+html[data-lu-variant] .cg-wrap piece.white.knight {
   background-image: var(--lu-white-knight) !important;
 }
 
-piece.black.knight,
-.cg-board piece.black.knight,
-.cg-wrap piece.black.knight {
+html[data-lu-variant] piece.black.knight,
+html[data-lu-variant] .cg-board piece.black.knight,
+html[data-lu-variant] .cg-wrap piece.black.knight {
   background-image: var(--lu-black-knight) !important;
 }

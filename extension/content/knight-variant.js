@@ -19,16 +19,25 @@ const VARIANTS = {
 };
 
 function normalizeVariant(value) {
+  if (value === "regular") return "regular";
   return Object.prototype.hasOwnProperty.call(VARIANTS, value) ? value : DEFAULT_VARIANT;
 }
 
 function applyVariant(variantName) {
   const normalized = normalizeVariant(variantName);
-  const variant = VARIANTS[normalized];
   const root = document.documentElement;
 
   if (!root) return;
 
+  if (normalized === "regular") {
+    root.removeAttribute("data-lu-variant");
+    root.style.removeProperty("--lu-white-knight");
+    root.style.removeProperty("--lu-black-knight");
+    return;
+  }
+
+  const variant = VARIANTS[normalized];
+  root.setAttribute("data-lu-variant", normalized);
   root.style.setProperty(
     "--lu-white-knight",
     `url("${ext.runtime.getURL(variant.white)}")`

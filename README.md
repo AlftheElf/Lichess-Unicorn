@@ -1,6 +1,6 @@
 # Lichess Unicorn Knights (Firefox)
 
-A tiny Firefox extension that replaces the knight piece graphics on **lichess.org** with unicorn SVGs.
+A tiny Firefox extension that replaces the knight piece graphics on **lichess.org** with unicorn/zebra/dragon SVGs.
 
 ## Install (temporary / dev)
 
@@ -8,6 +8,11 @@ A tiny Firefox extension that replaces the knight piece graphics on **lichess.or
 2. Click **Load Temporary Add-on…**
 3. Select: `extension/manifest.json`
 4. Visit https://lichess.org and start a game / analysis board.
+
+## Switching variants
+
+- Click the extension’s toolbar button.
+- Pick **Unicorn**, **Zebra**, or **Dragon**.
 
 ## How it works
 

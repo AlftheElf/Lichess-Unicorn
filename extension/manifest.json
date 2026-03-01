@@ -3,9 +3,15 @@
   "name": "Lichess Unicorn Knights",
   "version": "0.2.0",
   "description": "Replaces knight pieces on lichess.org with unicorn/zebra/dragon pieces. Works on Firefox and Chrome.",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
   "action": {
     "default_title": "Knight variant",
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "assets/icon128.png"
+    }
   },
   "permissions": ["storage"],
   "browser_specific_settings": {

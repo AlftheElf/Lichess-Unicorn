@@ -8,7 +8,7 @@ Works on **Firefox** and **Chrome**.
 
 ## Install on Firefox
 
-> **Firefox Add-on Store:** [Lichess Unicorn Knights](https://addons.mozilla.org/en-US/firefox/addon/lichess-unicorn-knights/) *(pending approval — link will be live once approved)*
+> **Firefox Add-on Store:** [Lichess Unicorn Knights](https://addons.mozilla.org/en-US/firefox/addon/lichess-unicorn-knights/)
 
 ### Or load temporarily (Firefox)
 

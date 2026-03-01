@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lichess Unicorn Knights",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Replaces knight pieces on lichess.org with unicorn/zebra/dragon pieces. Works on Firefox and Chrome.",
   "icons": {
     "128": "assets/icon128.png"

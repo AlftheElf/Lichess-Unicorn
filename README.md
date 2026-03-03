@@ -4,6 +4,8 @@ A tiny browser extension that replaces the knight piece graphics on **lichess.or
 
 Works on **Firefox** and **Chrome**.
 
+![Lichess Unicorn Knights screenshot](screenshot.png)
+
 ---
 
 ## Install

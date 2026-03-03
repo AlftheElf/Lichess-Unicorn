@@ -6,30 +6,30 @@ Works on **Firefox** and **Chrome**.
 
 ---
 
-## Install on Firefox
+## Install
 
-> **Firefox Add-on Store:** [Lichess Unicorn Knights](https://addons.mozilla.org/en-US/firefox/addon/lichess-unicorn-knights/)
+| Browser | Store link |
+|---------|------------|
+| **Chrome** | [Chrome Web Store](https://chromewebstore.google.com/detail/lichess-unicorn-knights/dpfihgekdcfnkknghkdanhdimklkioph) |
+| **Firefox** | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/lichess-unicorn-knights/) |
 
-### Or load temporarily (Firefox)
+---
+
+## Load manually (developers)
+
+### Firefox
 
 1. Open `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on…**
 3. Select `extension/manifest.json`
 
----
-
-## Install on Chrome
-
-Chrome requires extensions to be loaded as an **unpacked folder** when not from the Web Store.
+### Chrome
 
 1. **Download the zip** from the [latest GitHub release](https://github.com/AlftheElf/Lichess-Unicorn/releases/latest) — `lichess-unicorn-chrome.zip`
-2. **Unzip** it somewhere permanent (e.g. `~/Extensions/lichess-unicorn-chrome/`) — don't delete this folder, Chrome needs it to stay
+2. **Unzip** it somewhere permanent — don't delete this folder, Chrome needs it to stay
 3. Open `chrome://extensions`
 4. Enable **Developer mode** (toggle, top-right)
-5. Click **Load unpacked**
-6. Select the unzipped folder
-
-The extension will now appear in your toolbar. To update later, re-download the zip, replace the folder contents, and click the reload icon (↺) on `chrome://extensions`.
+5. Click **Load unpacked** and select the unzipped folder
 
 ---
 
